@@ -21,7 +21,7 @@ const { seo } = Astro.props as Props;
 		<span slot="logo">
 			<Logo />
 		</span>
-		<Button slot="action-item" href="/theme/get-started">Get Started</Button>
+		<Button slot="action-item" href="/company/menu">Menu</Button>
 	</Header>
 	<div id="page">
 		<slot />
@@ -32,7 +32,6 @@ const { seo } = Astro.props as Props;
 		color="var(--theme-on-surface-1)"
 		footerLists={footerLists}
     footerSocials={footerSocials}
-		copyrightName={settings.name}
 	>
 		<Logo slot="logo" />
 	</Footer>
