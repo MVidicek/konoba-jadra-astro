@@ -3,7 +3,6 @@ import { Header, Button, Footer } from '@odyssey-theme/components';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
-import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 
 
@@ -33,6 +32,5 @@ const { seo } = Astro.props as Props;
 		footerLists={footerLists}
     footerSocials={footerSocials}
 	>
-		<Logo slot="logo" />
 	</Footer>
 </Layout>

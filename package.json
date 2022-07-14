@@ -25,6 +25,7 @@
 		"prettier-plugin-astro": "^0.0.12"
 	},
 	"dependencies": {
+		"astro-icon": "^0.7.1",
 		"tw-elements": "^1.0.0-alpha12"
 	}
 }
