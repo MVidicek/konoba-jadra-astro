@@ -2,7 +2,6 @@ import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import {
 	classicThemeIcon,
-	darkThemeIcon,
 	earthThemeIcon,
 	blueThemeIcon,
 	orangeThemeIcon,
@@ -83,9 +82,6 @@ export class ThemeSwitcher extends LitElement {
 		if (theme === 'default') {
 			this._heroImage.src = '/assets/images/home/classic-hero.jpg';
 		}
-		if (theme === 'dark') {
-			this._heroImage.src = '/assets/images/home/dark-hero.jpg';
-		}
 		if (theme === 'earth') {
 			this._heroImage.src = '/assets/images/home/earth-hero.jpg';
 		}
@@ -110,15 +106,6 @@ export class ThemeSwitcher extends LitElement {
 						${classicThemeIcon}
 					</button>
 					<p>Classic</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('dark')}
-						?active=${this.theme === 'dark'}
-					>
-						${darkThemeIcon}
-					</button>
-					<p>Dark</p>
 				</div>
 				<div class="theme-select__container">
 					<button
