@@ -1,18 +1,14 @@
-import { twitterIcon, githubIcon, instagramIcon } from "../icons/icons";
+import { twitterIcon, instagramIcon } from "../icons/icons";
 
 
 export const footerSocials = [
   {
-    url: 'https://instagram.com/',
+    url: 'https://www.facebook.com/Konoba-Jadra-107477071607313/',
     icon: instagramIcon,
   },
   {
-    url: 'https://twitter.com/littlesticksdev',
+    url: 'https://www.facebook.com/Konoba-Jadra-107477071607313/',
     icon: twitterIcon,
-  },
-  {
-    url: 'https://github.com/littlesticksdev/odyssey-theme',
-    icon: githubIcon,
   },
 ]
 
