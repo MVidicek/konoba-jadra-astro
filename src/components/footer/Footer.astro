@@ -63,21 +63,4 @@ const { footerSocials, background, color} = Astro.props;
   .footer-copyright__container p {
     font-size: var(--font-size-sm);
   }
-  @media (max-width: 768px) {
-    .footer-grid__container :first-child {
-      grid-column: 1/-1;
-    }
-    .footer-grid__container {
-      padding: 5vh 0;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-    }
-  }
-  @media (max-width: 600px) {
-    .footer-grid__container {
-      padding: 5vh 0;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
 </style>
