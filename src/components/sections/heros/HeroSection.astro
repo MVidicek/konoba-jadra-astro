@@ -7,6 +7,10 @@ import { Container } from '@odyssey-theme/components';
 		<div class="hero-section__image">
 			<slot name="image-container">
 			</slot>
+		</div>
+	</section>
+	<section class="hero-section__section">
+		<div class="hero-section__image">
 			<slot name="image-container-drinks">
 			</slot>
 		</div>
@@ -16,6 +20,7 @@ import { Container } from '@odyssey-theme/components';
 <style>
 	.hero-section__section {
 		margin: var(--section-margin) auto;
+		margin-bottom: 8rem;
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: flex;
 		align-items: center;
