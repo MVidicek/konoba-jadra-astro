@@ -10,9 +10,8 @@ const selectOptions = [
 ---
 
 <form name="Contact Form" method="POST" action="/contact-thank-you" data-netlify="true">
-  <FormInput type="text" label="Name" name="Name" placeholder="John Doe" />
-  <FormInput type="email" label="Email" name="Email" placeholder="hello@example.com" />
-  <FormSelect label="How Did You Hear About Us?" options={selectOptions} />
+  <FormInput type="text" label="Name" name="Name" />
+  <FormInput type="email" label="Email" name="Email" />
   <FormTextarea label="Message" name="Message" placeholder="Your message here..." />
   <Button>Submit</Button>
 </form>
