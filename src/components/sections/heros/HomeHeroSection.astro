@@ -9,11 +9,14 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 		<div class="hero-section__text">
 				<h1>Konoba Jadra</h1>
 				<p>
-					A seafood restaurant in Kornati National Park.
+					A seafood restaurant located in Kornati National Park.
 				</p>
 				<div class="hero-btns__container mt-4">
-					<Button href="/company/contact" materialIcon="chevron_right"
+					<Button href="/company/contact" materialIcon="call"
 						>Reservations</Button
+					>
+					<Button href="/company/menu" materialIcon="article"
+						>The Menu</Button
 					>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher />}
@@ -22,7 +25,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 				<picture>
 					<img
 						src="/assets/images/home/classic-hero.jpg"
-						alt="Astro Odyssey"
+						alt="Konoba Jadra Home Page"
 						id="home-hero-image"
 					/>
 				</picture>
