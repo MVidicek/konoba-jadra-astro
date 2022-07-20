@@ -13,20 +13,17 @@
 		"preview": "astro preview",
 		"format": "npx prettier -w ."
 	},
-	"devDependencies": {
-		
-	},
 	"dependencies": {
-		"astro-icon": "^0.7.1",
-		"tw-elements": "^1.0.0-alpha12",
 		"@astrojs/lit": "^0.1.2",
 		"@astrojs/sitemap": "^0.1.0",
 		"@astrojs/tailwind": "^0.2.3",
 		"@odyssey-theme/components": "^0.1.66",
 		"@webcomponents/template-shadowroot": "^0.1.0",
 		"astro": "^1.0.0-beta.12",
+		"astro-icon": "^0.7.1",
 		"date-fns": "^2.28.0",
 		"lit": "^2.2.3",
-		"prettier-plugin-astro": "^0.0.12"
+		"prettier-plugin-astro": "^0.0.12",
+		"tw-elements": "^1.0.0-alpha12"
 	}
 }

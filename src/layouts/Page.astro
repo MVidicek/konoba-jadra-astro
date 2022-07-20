@@ -18,7 +18,7 @@ const { seo } = Astro.props as Props;
 
 <Layout seo={seo}>
 	<Header rightMenu navData={nav} slot="header">
-		<span slot="logo">
+		<span slot="logo" id="show">
 			<Logo />
 		</span>
 		<Button slot="action-item" href="/company/contact">Contact</Button>
@@ -35,3 +35,11 @@ const { seo } = Astro.props as Props;
 	>
 	</Footer>
 </Layout>
+
+<style>
+	@media only screen and (max-width: 900px) {
+    #show {
+        display: none;
+    }
+}
+</style>

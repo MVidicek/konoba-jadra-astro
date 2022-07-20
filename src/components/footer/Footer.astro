@@ -1,5 +1,6 @@
 ---
 import { Container } from "@odyssey-theme/components";
+import Logo from '../../components/Logo.astro';
 
 const { footerSocials, background, color} = Astro.props;
 ---
@@ -19,6 +20,7 @@ const { footerSocials, background, color} = Astro.props;
             </li>
           ))}
       </ul>
+      <p class="footer-socials__list font-mono text-white text-xl tracking-widest justify-center">+385 98 909 5755</p>
     </div>
     </div>
   </Container>
@@ -37,7 +39,9 @@ const { footerSocials, background, color} = Astro.props;
   }
   .footer-grid__container {
     padding: 10vh 0 1rem 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
   }
   .footer-socials__list {
     margin: 1rem 0;
@@ -63,4 +67,10 @@ const { footerSocials, background, color} = Astro.props;
   .footer-copyright__container p {
     font-size: var(--font-size-sm);
   }
+  .footer-brand__container {
+      grid-column: 1 / span 2;
+    }
+  .footer-socials__list {
+      grid-column: 1 / span 2;
+    }
 </style>
