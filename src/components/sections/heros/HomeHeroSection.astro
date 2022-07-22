@@ -17,10 +17,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 						>Reservations</Button
 					>
 					<Button href="/company/menu" materialIcon="article"
-						>Menu</Button
-					>
-					<Button href="/company/gallery" materialIcon="collections"
-						>Gallery</Button
+						>The Menu</Button
 					>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher />}
@@ -35,8 +32,8 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 				</picture>
 		</div>
 	</section>
-	<div class="container mt-24 px-6 mx-auto">
-		<section class="mb-32 text-gray-800">
+	<div class="container my-24 px-6 mx-auto">
+		<section class="mb-16 text-gray-800">
 			<style>
 				.zoom:hover img {
 					transform: scale(1.1);
@@ -94,15 +91,15 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					</a>
 				</div>
 			</div>
-			<div class="mt-12 flex flex-row justify-center items-center">
-				<Button href="/company/gallery"
+			<div class="mt-6 flex flex-row justify-center items-center">
+				<Button href="/company/gallery" materialIcon="collections"
 					>Image Gallery</Button
 				>
 			</div>
 		</section>
 	</div>
-	<div class="container my-24 px-6 mx-auto w-5/6 border-solid">
-		<p class="mt-12 text-sm text-zinc-600 italic ">
+	<div class="container mt-6 px-6 mx-auto w-5/6">
+		<p class="text-sm text-zinc-600 italic ">
 			"This restaurant is recommended to Mediterranean cuisine lovers. Perfectly cooked fried fish, prawns and lamb have an appetizing taste. In accordance with the guests' opinions, waiters offer good che here. Ale lovers will find it delicious.
 		</p>
 		<p class="mt-6 text-sm text-zinc-600 italic">
@@ -331,7 +328,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 	}
 	.hero-btns__container {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		justify-items: center;
 	}
@@ -348,6 +345,10 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 	@media (max-width: 768px) {
 		.hero-section__section {
 			grid-template-columns: 1fr;
+		}
+		.hero-btns__container {
+			grid-template-columns: 1fr;
+			gap: 1rem;
 		}
 		.map{
 			width: 100%;
