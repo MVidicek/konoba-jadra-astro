@@ -8,7 +8,7 @@ export const nav = [
 		slug: '/company/gallery',
 	},
 	{
-		title: 'The Menu',
+		title: 'Menu',
 		slug: '/company/menu',
 	},
 ];
