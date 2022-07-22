@@ -7,9 +7,9 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Konoba Jadra</h1>
+				<h1 class="font-medium text-xl">Konoba Jadra</h1>
 				<p class="mb-4 text-sm">
-					A seafood restaurant located in Kornati National Park.
+					A seafood restaurant located in Kornati National Park, Croatia.
 				</p>
 				<iframe width="500" height="350" frameborder="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=15.333116054534914%2C43.751877197928735%2C15.34770727157593%2C43.771140302094025&amp;layer=mapnik" style="border: 1px solid black" class="map"></iframe><br/>
 				<div class="hero-btns__container">
@@ -35,7 +35,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 				</picture>
 		</div>
 	</section>
-	<div class="container my-24 px-6 mx-auto">
+	<div class="container mt-24 px-6 mx-auto">
 		<section class="mb-32 text-gray-800">
 			<style>
 				.zoom:hover img {
@@ -94,16 +94,21 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					</a>
 				</div>
 			</div>
+			<div class="mt-12 flex flex-row justify-center items-center">
+				<Button href="/company/gallery"
+					>Image Gallery</Button
+				>
+			</div>
 		</section>
 	</div>
 	<div class="container my-24 px-6 mx-auto w-5/6 border-solid">
-		<p class="mt-12 text-sm text-zinc-600 font-thin font-mono italic ">
+		<p class="mt-12 text-sm text-zinc-600 italic ">
 			"This restaurant is recommended to Mediterranean cuisine lovers. Perfectly cooked fried fish, prawns and lamb have an appetizing taste. In accordance with the guests' opinions, waiters offer good che here. Ale lovers will find it delicious.
 		</p>
-		<p class="mt-6 text-sm text-zinc-600 font-thin font-mono italic">
+		<p class="mt-6 text-sm text-zinc-600 italic">
 			The atmosphere of hospitality of Konoba Jadra highly depends on the staff, that is energetic here. Service at this place is something one can name enjoyable. Prices are low for the quality you get. A lot of people note that the atmosphere is pretty here."
-			<p class="mt-6 text-sm text-zinc-600 font-thin font-mono italic">
-				<a href="https://restaurantguru.com/Konoba-Jadra-Kornati" class="text-blue-600" target="_blank"> - Restaurant Guru</a>
+			<p class="mt-6 text-md text-zinc-600">
+				<a href="https://restaurantguru.com/Konoba-Jadra-Kornati" class="primary-color" target="_blank"> - Restaurant Guru</a>
 			</p> 
 		</p>
 	</div>
@@ -111,17 +116,17 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 
 		<section class="mb-32 text-gray-800 text-center ">
 	
-			<h2 class="text-3xl font-bold mb-2 text-zinc-700">Testimonials</h2>
+			<h2 class="text-3xl font-bold mb-2 text-zinc-800">Testimonials</h2>
 			<h6 class="text-sm mb-12">(Clicking Review Titles leads to the actual Review)</h6>
 	
 			<div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
 				<div class="mb-12 md:mb-0">
 					<div class="flex justify-center mb-6">
-						<img src="/assets/images/avatars/man.png" class="rounded-full shadow-lg w-32" />
+						<img src="/assets/images/avatars/review-1.jpg" class="avatars shadow-lg w-32" />
 					</div>
-					<h5 class="text-lg font-bold mb-4 font-mono">Fernando_V6</h5>
-					<h6 class="font-medium text-red-600 mb-4 "><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r844406219-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Oasis for gourmets</a></h6>
-					<p class="mb-4 text-zinc-600 text-sm font-mono">
+					<h5 class="text-lg font-bold mb-4">Fernando_V6</h5>
+					<h6 class="primary-color mb-4 "><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r844406219-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Oasis for gourmets</a></h6>
+					<p class="mb-4 text-zinc-600 text-sm">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
 							class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 							<path fill="currentColor"
@@ -175,11 +180,11 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 				</div>
 				<div class="mb-12 md:mb-0">
 					<div class="flex justify-center mb-6">
-						<img src="/assets/images/avatars/man-2.png" class="rounded-full shadow-lg w-32" />
+						<img src="/assets/images/avatars/review-2.jpg" class="avatars shadow-lg w-32" />
 					</div>
-					<h5 class="text-lg font-bold mb-4 font-mono">Quoshak</h5>
-					<h6 class="font-medium text-yellow-500 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r763379681-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Friendly staff and nice food</a></h6>
-					<p class="mb-4 text-zinc-600 text-sm font-mono">
+					<h5 class="text-lg font-bold mb-4">Quoshak</h5>
+					<h6 class="primary-color mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r763379681-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Friendly staff and nice food</a></h6>
+					<p class="mb-4 text-zinc-600 text-sm">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
 							class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 							<path fill="currentColor"
@@ -232,11 +237,11 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 				</div>
 				<div class="mb-0">
 					<div class="flex justify-center mb-6">
-						<img src="/assets/images/avatars/woman.png" class="rounded-full shadow-lg w-32" />
+						<img src="/assets/images/avatars/review-3.jpg" class="avatars shadow-lg w-32" />
 					</div>
-					<h5 class="text-lg font-bold mb-4 font-mono">iLili_p</h5>
-					<h6 class="font-medium text-pink-600 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r705176625-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Nice Dalmatian restaurant</a></h6>
-					<p class="mb-4 text-zinc-600 text-sm font-mono">
+					<h5 class="text-lg font-bold mb-4">iLili_p</h5>
+					<h6 class="primary-color mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r705176625-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Nice Dalmatian restaurant</a></h6>
+					<p class="mb-4 text-zinc-600 text-sm">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
 							class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 							<path fill="currentColor"
@@ -296,6 +301,12 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 </Container>
 
 <style>
+	.avatars {
+		border-radius: var(--theme-shape-radius);
+	}
+	.primary-color{
+		color: var(--theme-primary);
+	}
 	.home-image {
 		border-radius: var(--theme-shape-radius);
 	}
@@ -323,7 +334,6 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: center;
 		justify-items: center;
-		gap: 1.5rem;
 	}
 	.hero-section__image {
 		display: flex;
