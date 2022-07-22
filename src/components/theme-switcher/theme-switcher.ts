@@ -37,7 +37,7 @@ export class ThemeSwitcher extends LitElement {
 			.theme-switcher__container {
 				margin: 2rem 0;
 				display: grid;
-				grid-template-columns: repeat(5, 1fr);
+				grid-template-columns: repeat(4, 1fr);
 			}
 			.theme-select__container {
 				display: flex;

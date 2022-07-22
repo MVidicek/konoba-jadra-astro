@@ -8,15 +8,19 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 	<section class="hero-section__section">
 		<div class="hero-section__text">
 				<h1>Konoba Jadra</h1>
-				<p class="mb-6 text-sm">
+				<p class="mb-4 text-sm">
 					A seafood restaurant located in Kornati National Park.
 				</p>
-				<div class="hero-btns__container mt-4">
+				<iframe width="500" height="350" frameborder="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=15.333116054534914%2C43.751877197928735%2C15.34770727157593%2C43.771140302094025&amp;layer=mapnik" style="border: 1px solid black" class="map"></iframe><br/>
+				<div class="hero-btns__container">
 					<Button href="/company/contact" materialIcon="call"
 						>Reservations</Button
 					>
 					<Button href="/company/menu" materialIcon="article"
-						>The Menu</Button
+						>Menu</Button
+					>
+					<Button href="/company/gallery" materialIcon="collections"
+						>Gallery</Button
 					>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher />}
@@ -25,12 +29,73 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 				<picture>
 					<img
 						src="/assets/images/home/classic-hero.jpg"
-						alt="Konoba Jadra Home Page"
+						alt="Konoba Jadra Home Page Image"
 						id="home-hero-image"
 					/>
 				</picture>
 		</div>
 	</section>
+	<div class="container my-24 px-6 mx-auto">
+		<section class="mb-32 text-gray-800">
+			<style>
+				.zoom:hover img {
+					transform: scale(1.1);
+				}
+			</style>
+			<div class="grid lg:grid-cols-3 gap-6">
+				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
+					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+					<img src="/assets/images/home/home-4.jpg" alt="Staff Image"
+						class="w-full transition duration-300 ease-linear align-middle" />
+					<a href="#!">
+						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden">
+						</div>
+						<div class="hover-overlay">
+							<div
+								class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+								style="background-color: rgba(253, 253, 253, 0.15)"></div>
+						</div>
+					</a>
+				</div>
+	
+				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
+					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+					<img src="/assets/images/home/home-2.jpg" alt="Indoors Image"
+						class="w-full transition duration-300 ease-linear align-middle" />
+					<a href="#!">
+						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+							style="background-color: rgba(0, 0, 0, 0.1)">
+							<div class="flex justify-start items-end h-full">
+							</div>
+						</div>
+						<div class="hover-overlay">
+							<div
+								class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+								style="background-color: rgba(253, 253, 253, 0.15)"></div>
+						</div>
+					</a>
+				</div>
+	
+				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
+					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+					<img src="/assets/images/home/home-3.jpg" alt="Outdoors Image"
+						class="w-full transition duration-300 ease-linear align-middle" />
+					<a href="#!">
+						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+							style="background-color: rgba(0, 0, 0, 0.1)">
+							<div class="flex justify-start items-end h-full">
+							</div>
+						</div>
+						<div class="hover-overlay">
+							<div
+								class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+								style="background-color: rgba(253, 253, 253, 0.15)"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
 	<div class="container my-24 px-6 mx-auto w-5/6 border-solid">
 		<p class="mt-12 text-sm text-zinc-600 font-thin font-mono italic ">
 			"This restaurant is recommended to Mediterranean cuisine lovers. Perfectly cooked fried fish, prawns and lamb have an appetizing taste. In accordance with the guests' opinions, waiters offer good che here. Ale lovers will find it delicious.
@@ -54,8 +119,8 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					<div class="flex justify-center mb-6">
 						<img src="/assets/images/avatars/man.png" class="rounded-full shadow-lg w-32" />
 					</div>
-					<h5 class="text-lg font-bold mb-4">Fernando_V6</h5>
-					<h6 class="font-medium text-red-600 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r844406219-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Oasis for gourmets</a></h6>
+					<h5 class="text-lg font-bold mb-4 font-mono">Fernando_V6</h5>
+					<h6 class="font-medium text-red-600 mb-4 "><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r844406219-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Oasis for gourmets</a></h6>
 					<p class="mb-4 text-zinc-600 text-sm font-mono">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
 							class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -112,7 +177,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					<div class="flex justify-center mb-6">
 						<img src="/assets/images/avatars/man-2.png" class="rounded-full shadow-lg w-32" />
 					</div>
-					<h5 class="text-lg font-bold mb-4">Quoshak</h5>
+					<h5 class="text-lg font-bold mb-4 font-mono">Quoshak</h5>
 					<h6 class="font-medium text-yellow-500 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r763379681-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Friendly staff and nice food</a></h6>
 					<p class="mb-4 text-zinc-600 text-sm font-mono">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
@@ -169,7 +234,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					<div class="flex justify-center mb-6">
 						<img src="/assets/images/avatars/woman.png" class="rounded-full shadow-lg w-32" />
 					</div>
-					<h5 class="text-lg font-bold mb-4">iLili_p</h5>
+					<h5 class="text-lg font-bold mb-4 font-mono">iLili_p</h5>
 					<h6 class="font-medium text-pink-600 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r705176625-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Nice Dalmatian restaurant</a></h6>
 					<p class="mb-4 text-zinc-600 text-sm font-mono">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
@@ -231,26 +296,34 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 </Container>
 
 <style>
+	.home-image {
+		border-radius: var(--theme-shape-radius);
+	}
+	.map{
+		width: 100%;
+		max-height: 100vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+		}
 	.hero-section__section {
 		margin: var(--section-margin) auto;
 		margin-bottom: 4rem;
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		align-items: center;
 		gap: 1rem;
 	}
 	.hero-section__text {
 		justify-self: center;
 		max-width: 25rem;
-	}
-	.hero-btns__container {
-		display: flex;
 		align-items: center;
-		gap: 1rem;
 	}
 	.hero-btns__container {
-		margin-right: 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+		gap: 1.5rem;
 	}
 	.hero-section__image {
 		display: flex;
@@ -265,6 +338,9 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 	@media (max-width: 768px) {
 		.hero-section__section {
 			grid-template-columns: 1fr;
+		}
+		.map{
+			width: 100%;
 		}
 	}
 </style>

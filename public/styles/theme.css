@@ -40,7 +40,7 @@
 [data-theme='default'] {
 	color-scheme: light;
 	/* Theme Colors */
-	--theme-primary: hsl(0, 0%, 0%);
+	--theme-primary: #00388b;
 	--theme-primary-hover: hsl(0, 0%, 20%);
 	--theme-on-primary: #fff;
 
@@ -55,8 +55,8 @@
 
 	/* Theme Shape */
 	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
-	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
-	--theme-button-border-radius: 3rem;
+	--theme-shape-radius: 5px;
+	--theme-button-border-radius: 5px;
 
 	/* Theme Transition */
 	--theme-transition: 0.2s ease-in-out;
@@ -69,27 +69,6 @@
 	--container-padding: 0 1rem;
 
 	--theme-blog-post-header-width: 1200px;
-}
-
-[data-theme='dark'] {
-	color-scheme: dark;
-	/* Theme Colors */
-	--theme-primary: hsl(0, 0%, 100%);
-	--theme-primary-hover: hsl(0, 0%, 90%);
-	--theme-on-primary: hsl(0, 0%, 0%);
-
-	--theme-bg: hsl(0, 0%, 2%);
-	--theme-on-bg: hsl(0, 0%, 100%);
-
-	--theme-surface-1: hsl(0, 0%, 20%);
-	--theme-on-surface-1: hsl(0, 0%, 100%);
-
-	--theme-surface-2: #203422;
-	--theme-on-surface-2: #ffffff;
-
-	--theme-shape-radius: 0;
-
-	--form-field-input-color: var(--theme-on-bg);
 }
 
 [data-theme='earth'] {
@@ -107,7 +86,8 @@
 	--theme-surface-2: #c3d9c4;
 	--theme-on-surface-2: #000;
 
-	--theme-button-border-radius: 0.5rem;
+	--theme-shape-radius: 0;
+	--theme-button-border-radius: 0;
 }
 
 [data-theme='ocean'] {
@@ -143,5 +123,6 @@
 	--theme-surface-2: #6a4d34;
 	--theme-on-surface-2: #ffffff;
 
-	--theme-button-border-radius: 0.5rem;
+	--theme-shape-radius: 5px;
+	--theme-button-border-radius: 5px;
 }
