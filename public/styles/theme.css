@@ -1,6 +1,6 @@
 :root {
 	/* Theme Colors */
-	--theme-primary: hsl(0, 0%, 0%);
+	--theme-primary: #00388b;
 	--theme-primary-hover: hsl(0, 0%, 20%);
 	--theme-on-primary: #fff;
 
@@ -15,8 +15,8 @@
 
 	/* Theme Shapes */
 	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
-	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
-	--theme-button-border-radius: 3rem;
+	--theme-shape-radius: 5px;
+	--theme-button-border-radius: 5px;
 
 	/* Theme Transition */
 	--theme-transition: 0.2s ease-in-out;
