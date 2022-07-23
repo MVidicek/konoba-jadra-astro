@@ -13,7 +13,7 @@ import Logo from '../../Logo.astro';
 			</div>
 				<h1 class="font-medium text-xl">Konoba Jadra</h1>
 				<p class="mb-4 text-sm">
-					A seafood restaurant located in Kornati National Park, Croatia.
+					A seafood restaurant located in Kornati National Park on Island Piškera, Croatia.
 				</p>
 				<iframe width="500" height="350" frameborder="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=15.333116054534914%2C43.751877197928735%2C15.34770727157593%2C43.771140302094025&amp;layer=mapnik" style="border: 1px solid black" class="map"></iframe><br/>
 				<div class="hero-btns__container">
@@ -26,7 +26,7 @@ import Logo from '../../Logo.astro';
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher />}
 		</div>
-		<div class="hero-section__image">
+		<div class="hero-section__image container mx-auto">
 				<picture>
 					<img
 						src="/assets/images/home/classic-hero.jpg"
@@ -338,6 +338,7 @@ import Logo from '../../Logo.astro';
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		justify-items: center;
+		margin-right: auto;
 	}
 	.hero-section__image {
 		display: flex;
@@ -350,15 +351,14 @@ import Logo from '../../Logo.astro';
 		border-radius: var(--theme-shape-radius);
 	}
 	@media (max-width: 768px) {
-		.hero-section__section {
-			grid-template-columns: 1fr;
-		}
-		.hero-btns__container {
-			grid-template-columns: 1fr;
-			gap: 1rem;
-		}
 		.map{
 			width: 100%;
+		}
+	}
+	@media only screen and (max-width: 800px) {
+    .hero-btns__container {
+			grid-template-columns: 1fr;
+			gap: 1rem;
 		}
 	}
 	@media only screen and (max-width: 1300px) {
@@ -367,5 +367,31 @@ import Logo from '../../Logo.astro';
 			margin-left: 20%;
 			margin-bottom: 3.5rem;
 		}
+		.hero-section__section {
+			grid-template-columns: 1fr;
+		}
+		.hero-section__image {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+		.hero-section__image img {
+		width: 95%;
+		height: 95%;
+		margin: auto;
+		max-height: 80vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
 	}
+	}
+	@media only screen and (max-width: 800px) {
+    .hero-section__image img {
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		max-height: 80vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+		}
+	}
+
 </style>
