@@ -2,11 +2,15 @@
 import { Container, Button } from '@odyssey-theme/components';
 import settings from '../../../config/settings.js';
 import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
+import Logo from '../../Logo.astro';
 ---
 
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
+			<div class="logo-mobile w-3/5 flex flex-row justify-center items-center">
+				<Logo />
+			</div>
 				<h1 class="font-medium text-xl">Konoba Jadra</h1>
 				<p class="mb-4 text-sm">
 					A seafood restaurant located in Kornati National Park, Croatia.
@@ -298,6 +302,9 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 </Container>
 
 <style>
+	.logo-mobile{
+		display: none;
+	}
 	.avatars {
 		border-radius: var(--theme-shape-radius);
 	}
@@ -352,6 +359,13 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 		}
 		.map{
 			width: 100%;
+		}
+	}
+	@media only screen and (max-width: 1300px) {
+    .logo-mobile{
+			display: block;
+			margin-left: 20%;
+			margin-bottom: 3.5rem;
 		}
 	}
 </style>

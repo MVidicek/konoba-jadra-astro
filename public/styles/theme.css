@@ -103,6 +103,9 @@
 
 	--theme-surface-2: #072650;
 	--theme-on-surface-2: #ffffff;
+
+	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
+	--theme-button-border-radius: 3rem;
 }
 
 [data-theme='sand'] {
