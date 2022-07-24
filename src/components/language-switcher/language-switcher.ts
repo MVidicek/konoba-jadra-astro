@@ -7,9 +7,9 @@ import {
 	orangeThemeIcon,
 } from './icons';
 
-export const tagName = 'theme-switcher';
+export const tagName = 'language-switcher';
 
-@customElement('theme-switcher')
+@customElement('language-switcher')
 export class ThemeSwitcher extends LitElement {
 	static styles = [
 		css`
@@ -20,7 +20,6 @@ export class ThemeSwitcher extends LitElement {
 				display: inline-flex;
 				outline: none;
 				border: none;
-				margin: 0 10px;
 				background-color: transparent;
 				border: 2px solid transparent;
 				padding: 1px;
@@ -55,7 +54,7 @@ export class ThemeSwitcher extends LitElement {
 	private _doc = document.firstElementChild;
 
 	private _heroImage: HTMLImageElement =
-		document.querySelector('#home-hero-image');
+		document.querySelector('#menu-image-food');
 
 	@property({ type: String })
 	theme: string = 'default';
@@ -80,16 +79,16 @@ export class ThemeSwitcher extends LitElement {
 	private _setTheme(theme) {
 		this._doc.setAttribute('data-theme', theme);
 		if (theme === 'default') {
-			this._heroImage.src = '/assets/images/home/classic-hero.jpg';
+			this._heroImage.src = '/assets/images/menu/menu-hr.png';
 		}
 		if (theme === 'earth') {
-			this._heroImage.src = '/assets/images/home/earth-hero.jpg';
+			this._heroImage.src = '/assets/images/menu/menu-de.png';
 		}
 		if (theme === 'ocean') {
-			this._heroImage.src = '/assets/images/home/ocean-hero.jpg';
+			this._heroImage.src = '/assets/images/menu/menu-it.png';
 		}
 		if (theme === 'sand') {
-			this._heroImage.src = '/assets/images/home/sand-hero.jpg';
+			this._heroImage.src = '/assets/images/menu/menu-eng.png';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
@@ -105,7 +104,7 @@ export class ThemeSwitcher extends LitElement {
 					>
 						${classicThemeIcon}
 					</button>
-					<p>HR</p>
+					<p>Hrvatski</p>
 				</div>
 				<div class="theme-select__container">
 					<button
@@ -114,7 +113,7 @@ export class ThemeSwitcher extends LitElement {
 					>
 						${earthThemeIcon}
 					</button>
-					<p>DE</p>
+					<p>Deutsch</p>
 				</div>
 				<div class="theme-select__container">
 					<button
@@ -123,7 +122,7 @@ export class ThemeSwitcher extends LitElement {
 					>
 						${blueThemeIcon}
 					</button>
-					<p>IT</p>
+					<p>Ocean</p>
 				</div>
 				<div class="theme-select__container">
 					<button
@@ -132,7 +131,7 @@ export class ThemeSwitcher extends LitElement {
 					>
 						${orangeThemeIcon}
 					</button>
-					<p>UK</p>
+					<p>Sand</p>
 				</div>
 			</div>
 		`;

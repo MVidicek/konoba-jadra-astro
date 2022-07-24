@@ -11,6 +11,7 @@ import Logo from '../../Logo.astro';
 			<div class="logo-mobile w-3/5 flex flex-row justify-center items-center">
 				<Logo />
 			</div>
+			{settings.enableThemeSwitcher && <ThemeSwitcher />}
 				<h1 class="font-medium text-xl">Konoba Jadra</h1>
 				<p class="mb-4 text-sm">
 					A seafood restaurant located in Kornati National Park on Island Piškera, Croatia.
@@ -24,7 +25,6 @@ import Logo from '../../Logo.astro';
 						>The Menu</Button
 					>
 				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher />}
 		</div>
 		<div class="hero-section__image container mx-auto">
 				<picture>
@@ -378,6 +378,7 @@ import Logo from '../../Logo.astro';
 		width: 95%;
 		height: 95%;
 		margin: auto;
+		margin-top: 1rem;
 		max-height: 80vh;
 		object-fit: cover;
 		border-radius: var(--theme-shape-radius);
@@ -388,6 +389,7 @@ import Logo from '../../Logo.astro';
 		width: 100%;
 		height: 100%;
 		margin: auto;
+		margin-top: 1rem;
 		max-height: 80vh;
 		object-fit: cover;
 		border-radius: var(--theme-shape-radius);

@@ -10,27 +10,12 @@ const seo = {
 
 <Layout {seo}>
 	<div class="img-container-countries container">
-		<img class="img-country" src="/assets/images/countries/croatia.png" alt="croatian flag">
-		<img class="img-country" src="/assets/images/countries/germany.png" alt="croatian flag">
-		<img class="img-country" src="/assets/images/countries/italy.png" alt="croatian flag">
-		<img class="img-country" src="/assets/images/countries/united-kingdom.png" alt="croatian flag">
+		<img class="img-country" id="hr" src="/assets/images/countries/croatia.png" alt="croatian flag">
+		<img class="img-country" id="de" src="/assets/images/countries/germany.png" alt="german flag">
+		<img class="img-country" id="it" src="/assets/images/countries/italy.png" alt="italian flag">
+		<img class="img-country" id="uk" src="/assets/images/countries/united-kingdom.png" alt="great britain flag">
 	</div>
-	<HeroSection>
-			<picture slot="image-container-drinks">
-				<img
-					src="/assets/images/menu/drinks-hr.png"
-					alt="Menu Drinks"
-					id="home-hero-image-drinks"
-				/>
-			</picture>
-    <picture slot="image-container">
-      <img
-        src="/assets/images/menu/menu-hr.png"
-        alt="Menu Food"
-        id="home-hero-image"
-      />
-    </picture>
-	</HeroSection>
+	<HeroSection/>
 </Layout>
 
 <style>
@@ -39,6 +24,11 @@ const seo = {
 		max-width: 64px;
 		margin: 0 10px;
 	}
+	.img-country:hover
+    {
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+    }
 	.img-container-countries {
 		display: flex;
 		flex-direction: row;
