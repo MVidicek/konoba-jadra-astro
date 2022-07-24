@@ -3,7 +3,7 @@ import { Container } from '@odyssey-theme/components';
 		// check for a local storage theme first
 const localStorageTheme = localStorage.getItem('theme');
 
-let language = 'eng';
+let language = 'hr';
 
 switch(localStorageTheme) {
 	case 'default':
@@ -19,7 +19,7 @@ switch(localStorageTheme) {
 		language = "eng";
 		break;
 	default:
-		language = "eng";
+		language = "hr";
 		break;
 }
 ---

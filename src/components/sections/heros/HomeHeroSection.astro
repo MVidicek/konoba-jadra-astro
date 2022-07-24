@@ -6,7 +6,7 @@ import Logo from '../../Logo.astro';
 ---
 
 <Container>
-	<section class="hero-section__section">
+	<section class="hero-section__section px-6">
 		<div class="hero-section__text">
 			<div class="logo-mobile w-3/5 flex flex-row justify-center items-center">
 				<Logo />
@@ -36,7 +36,7 @@ import Logo from '../../Logo.astro';
 				</picture>
 		</div>
 	</section>
-	<div class="container my-24 px-6 mx-auto">
+	<div class="container my-12 px-6 mx-auto">
 		<section class="mb-16 text-gray-800">
 			<style>
 				.zoom:hover img {
@@ -322,7 +322,6 @@ import Logo from '../../Logo.astro';
 		}
 	.hero-section__section {
 		margin: var(--section-margin) auto;
-		margin-bottom: 4rem;
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -375,8 +374,8 @@ import Logo from '../../Logo.astro';
 			grid-template-columns: 1fr;
 		}
 		.hero-section__image img {
-		width: 95%;
-		height: 95%;
+		width: 100%;
+		height: 100%;
 		margin: auto;
 		margin-top: 1rem;
 		max-height: 80vh;
