@@ -9,6 +9,12 @@ const seo = {
 ---
 
 <Layout {seo}>
+	<div class="img-container-countries container">
+		<img class="img-country" src="/assets/images/countries/croatia.png" alt="croatian flag">
+		<img class="img-country" src="/assets/images/countries/germany.png" alt="croatian flag">
+		<img class="img-country" src="/assets/images/countries/italy.png" alt="croatian flag">
+		<img class="img-country" src="/assets/images/countries/united-kingdom.png" alt="croatian flag">
+	</div>
 	<HeroSection>
 			<picture slot="image-container-drinks">
 				<img
@@ -26,3 +32,17 @@ const seo = {
     </picture>
 	</HeroSection>
 </Layout>
+
+<style>
+	.img-country{
+		width: 15%;
+		max-width: 64px;
+		margin: 0 10px;
+	}
+	.img-container-countries {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
