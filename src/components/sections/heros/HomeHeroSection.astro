@@ -6,7 +6,15 @@ import Logo from '../../Logo.astro';
 ---
 
 <Container>
-	<section class="hero-section__section px-6">
+	<section class="hero-section__section">
+		<div class="hero-section__image mx-auto">
+			<picture>
+				<img
+					src="/assets/images/home/5.png"
+					alt="seafood left illustration"
+				/>
+			</picture>
+	</div>
 		<div class="hero-section__text">
 			<div class="logo-mobile w-3/5 flex flex-row justify-center items-center">
 				<Logo />
@@ -26,17 +34,16 @@ import Logo from '../../Logo.astro';
 					>
 				</div>
 		</div>
-		<div class="hero-section__image container mx-auto">
-				<picture>
-					<img
-						src="/assets/images/home/classic-hero.jpg"
-						alt="Konoba Jadra Home Page Image"
-						id="home-hero-image"
-					/>
-				</picture>
-		</div>
+		<div class="hero-section__image mx-auto">
+			<picture>
+				<img
+					src="/assets/images/home/6.png"
+					alt="seafood right illustration"
+				/>
+			</picture>
+	</div>
 	</section>
-	<div class="container my-12 px-6 mx-auto">
+	<div class="container py-6 px-6 mx-auto">
 		<section class="mb-16 text-gray-800">
 			<style>
 				.zoom:hover img {
@@ -44,6 +51,7 @@ import Logo from '../../Logo.astro';
 				}
 			</style>
 			<div class="grid lg:grid-cols-3 gap-6">
+
 				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
 					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
 					<img src="/assets/images/home/home-4.jpg" alt="Staff Image"
@@ -324,8 +332,7 @@ import Logo from '../../Logo.astro';
 		margin: var(--section-margin) auto;
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1rem;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.hero-section__text {
 		justify-self: center;
@@ -334,7 +341,8 @@ import Logo from '../../Logo.astro';
 	}
 	.hero-btns__container {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
+		gap: 1rem;
 		align-items: center;
 		justify-items: center;
 		margin-right: auto;
@@ -347,51 +355,44 @@ import Logo from '../../Logo.astro';
 		height: 100%;
 		max-height: 80vh;
 		object-fit: cover;
-		border-radius: var(--theme-shape-radius);
 	}
 	@media (max-width: 768px) {
 		.map{
 			width: 100%;
 		}
 	}
-	@media only screen and (max-width: 800px) {
-    .hero-btns__container {
-			grid-template-columns: 1fr;
-			gap: 1rem;
-		}
-	}
 	@media only screen and (max-width: 1300px) {
     .logo-mobile{
 			display: block;
 			margin-left: 20%;
-			margin-bottom: 3.5rem;
-		}
-		.hero-section__section {
-			grid-template-columns: 1fr;
-		}
-		.hero-section__image {
-			display: grid;
-			grid-template-columns: 1fr;
 		}
 		.hero-section__image img {
 		width: 100%;
 		height: 100%;
 		margin: auto;
 		margin-top: 1rem;
-		max-height: 80vh;
+		max-height: 60vh;
 		object-fit: cover;
-		border-radius: var(--theme-shape-radius);
 	}
 	}
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 1000px) {
     .hero-section__image img {
 		width: 100%;
 		height: 100%;
-		margin: auto;
 		margin-top: 1rem;
-		max-height: 80vh;
+		margin: auto;
+		max-height: 40vh;
 		object-fit: cover;
-		border-radius: var(--theme-shape-radius);
+		}
+	}
+	@media only screen and (max-width: 800px) {
+	.logo-mobile{
+			display: block;
+			margin-left: 20%;
+			margin-bottom: 1rem;
+		}
+    .hero-section__image img {
+		display: none;
 		}
 	}
 
