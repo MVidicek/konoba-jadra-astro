@@ -20,19 +20,19 @@ import Logo from '../../Logo.astro';
 				<Logo />
 			</div>
 			{settings.enableThemeSwitcher && <ThemeSwitcher />}
-			<div class="hero-btns__container">
-				<Button href="/company/contact" materialIcon="call"
-					>Reservations</Button
-				>
-				<Button href="/company/menu" materialIcon="article"
-					>The Menu</Button
-				>
-			</div>
-				<h1 class="font-bold text-xl">Konoba Jadra</h1>
-				<p class="mb-4 text-sm">
+				<h1 class="font-bold text-xl text-center">Konoba Jadra</h1>
+				<p class="mb-4 text-sm text-center">
 					A seafood restaurant located in Kornati National Park on Island Piškera, Croatia.
 				</p>
 				<iframe width="350" height="350" frameborder="1" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=15.333116054534914%2C43.751877197928735%2C15.34770727157593%2C43.771140302094025&amp;layer=mapnik" class="map"></iframe><br/>
+				<div class="hero-btns__container">
+					<Button href="/company/contact" materialIcon="call"
+						>Reservations</Button
+					>
+					<Button href="/company/menu" materialIcon="article"
+						>The Menu</Button
+					>
+				</div>
 		</div>
 		<div class="hero-section__image mx-auto">
 			<picture>
@@ -337,7 +337,7 @@ import Logo from '../../Logo.astro';
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 40px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;;
 	}
 	.hero-section__text {
 		justify-self: center;
@@ -346,12 +346,11 @@ import Logo from '../../Logo.astro';
 	}
 	.hero-btns__container {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
+		grid-template-columns: 1fr;
+		gap: 1rem;
 		align-items: center;
 		justify-items: center;
 		margin-right: auto;
-		margin-bottom: 2rem;
 	}
 	.hero-section__image {
 		display: flex;
@@ -388,7 +387,7 @@ import Logo from '../../Logo.astro';
 		align-items: center;
 		justify-items: center;
 		margin-right: auto;
-		margin-bottom: 3rem;
+		margin-bottom: 1.5rem;
 		}
 		.hero-section__section {
 		margin: var(--section-margin) auto;
@@ -396,7 +395,7 @@ import Logo from '../../Logo.astro';
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 30px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 390px center;;
 	}
 	}
 	@media only screen and (max-width: 1000px) {
@@ -408,6 +407,15 @@ import Logo from '../../Logo.astro';
     .hero-section__image img {
 		display: none;
 		}
+		.hero-btns__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		align-items: center;
+		justify-items: center;
+		margin-right: auto;
+		margin-bottom: 0.5rem;
+		}
 		.hero-section__section {
 		margin: var(--section-margin) auto;
 		margin-bottom: 0;
@@ -415,11 +423,29 @@ import Logo from '../../Logo.astro';
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 1rem;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 50px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 320px center;;
 	}
 	
 	}
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 400px) {
+		.hero-section__section {
+		margin: var(--section-margin) auto;
+		margin-bottom: 0;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 1rem;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;;
+	}
+		.hero-btns__container {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+		align-items: center;
+		justify-items: center;
+		margin-right: auto;
+		margin-bottom: 0.5rem;
+		}
 	}
 
 </style>
