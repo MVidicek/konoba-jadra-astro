@@ -26,13 +26,13 @@
 	--theme-grid-gap: 1rem;
 	--container-max-width: 1440px;
 	--container-max-width-narrow: 960px;
-	--container-padding: 0 1rem;
+	--container-padding: 0;
 
 	--theme-blog-post-header-width: 1200px;
 
 	/* Theme Fonts */
-	--theme-font-family-serif: 'Cinzel', serif;
-	--theme-font-family-sans: 'Cinzel', serif;
+	--theme-font-family-serif: 'Montserrat', sans-serif;
+	--theme-font-family-sans: 'Montserrat', sans-serif;
 }
 
 [data-theme='default'] {
@@ -42,7 +42,7 @@
 	--theme-primary-hover: hsl(219, 66%, 44%);
 	--theme-on-primary: #fff;
 
-	--theme-bg: #fff;
+	--theme-bg: #fafafa;
 	--theme-on-bg: #000;
 
 	--theme-surface-1: #f2f2f2;
@@ -53,8 +53,8 @@
 
 	/* Theme Shape */
 	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
-	--theme-shape-radius: 5px;
-	--theme-button-border-radius: 5px;
+	--theme-shape-radius: 3px;
+	--theme-button-border-radius: 3px;
 
 	/* Theme Transition */
 	--theme-transition: 0.2s ease-in-out;
@@ -64,7 +64,7 @@
 	--theme-grid-gap: 1rem;
 	--container-max-width: 1440px;
 	--container-max-width-narrow: 960px;
-	--container-padding: 0 1rem;
+	--container-padding: 0;
 
 	--theme-blog-post-header-width: 1200px;
 }

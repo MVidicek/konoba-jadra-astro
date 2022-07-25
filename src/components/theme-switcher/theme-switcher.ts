@@ -20,7 +20,7 @@ export class ThemeSwitcher extends LitElement {
 				display: inline-flex;
 				outline: none;
 				border: none;
-				margin: 0 10px;
+				margin: 0 5px;
 				background-color: transparent;
 				border: 2px solid transparent;
 				padding: 1px;

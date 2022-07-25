@@ -20,19 +20,19 @@ import Logo from '../../Logo.astro';
 				<Logo />
 			</div>
 			{settings.enableThemeSwitcher && <ThemeSwitcher />}
-				<h1 class="font-medium text-xl">Konoba Jadra</h1>
+			<div class="hero-btns__container">
+				<Button href="/company/contact" materialIcon="call"
+					>Reservations</Button
+				>
+				<Button href="/company/menu" materialIcon="article"
+					>The Menu</Button
+				>
+			</div>
+				<h1 class="font-bold text-xl">Konoba Jadra</h1>
 				<p class="mb-4 text-sm">
 					A seafood restaurant located in Kornati National Park on Island Piškera, Croatia.
 				</p>
-				<iframe width="500" height="350" frameborder="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=15.333116054534914%2C43.751877197928735%2C15.34770727157593%2C43.771140302094025&amp;layer=mapnik" style="border: 1px solid black" class="map"></iframe><br/>
-				<div class="hero-btns__container">
-					<Button href="/company/contact" materialIcon="call"
-						>Reservations</Button
-					>
-					<Button href="/company/menu" materialIcon="article"
-						>The Menu</Button
-					>
-				</div>
+				<iframe width="350" height="350" frameborder="1" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=15.333116054534914%2C43.751877197928735%2C15.34770727157593%2C43.771140302094025&amp;layer=mapnik" class="map"></iframe><br/>
 		</div>
 		<div class="hero-section__image mx-auto">
 			<picture>
@@ -43,7 +43,8 @@ import Logo from '../../Logo.astro';
 			</picture>
 	</div>
 	</section>
-	<div class="container py-6 px-6 mx-auto">
+	<hr class="solid mb-8">
+	<div class="container px-12 mx-auto">
 		<section class="mb-16 text-gray-800">
 			<style>
 				.zoom:hover img {
@@ -54,7 +55,7 @@ import Logo from '../../Logo.astro';
 
 				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
 					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-					<img src="/assets/images/home/home-4.jpg" alt="Staff Image"
+					<img src="/assets/images/home/home-1.jpg" alt="Staff Image"
 						class="w-full transition duration-300 ease-linear align-middle" />
 					<a href="#!">
 						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden">
@@ -121,7 +122,7 @@ import Logo from '../../Logo.astro';
 			</p> 
 		</p>
 	</div>
-	<div class="container my-24 px-6 mx-auto">
+	<div class="container my-24 px-12 mx-auto">
 
 		<section class="mb-32 text-gray-800 text-center ">
 	
@@ -326,13 +327,17 @@ import Logo from '../../Logo.astro';
 		width: 100%;
 		max-height: 100vh;
 		object-fit: cover;
+		border: 1px solid;
 		border-radius: var(--theme-shape-radius);
+
 		}
 	.hero-section__section {
 		margin: var(--section-margin) auto;
+		margin-bottom: 2rem;
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom center;;
 	}
 	.hero-section__text {
 		justify-self: center;
@@ -341,11 +346,12 @@ import Logo from '../../Logo.astro';
 	}
 	.hero-btns__container {
 		display: grid;
-		grid-template-columns: 1fr;
-		gap: 1rem;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
 		align-items: center;
 		justify-items: center;
 		margin-right: auto;
+		margin-bottom: 2rem;
 	}
 	.hero-section__image {
 		display: flex;
@@ -353,6 +359,7 @@ import Logo from '../../Logo.astro';
 	.hero-section__image img {
 		width: 100%;
 		height: 100%;
+		margin-top: 5rem;
 		max-height: 80vh;
 		object-fit: cover;
 	}
@@ -370,10 +377,19 @@ import Logo from '../../Logo.astro';
 		width: 100%;
 		height: 100%;
 		margin: auto;
-		margin-top: 1rem;
-		max-height: 60vh;
+		margin-top: 6rem;
+		max-height: 70vh;
 		object-fit: cover;
-	}
+		}
+		.hero-btns__container {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		align-items: center;
+		justify-items: center;
+		margin-right: auto;
+		margin-bottom: 3rem;
+		}
 	}
 	@media only screen and (max-width: 1000px) {
     .logo-mobile{
@@ -385,14 +401,17 @@ import Logo from '../../Logo.astro';
 		display: none;
 		}
 		.hero-section__section {
+		margin: var(--section-margin) auto;
+		margin-bottom: 0;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
 		grid-template-columns: 1fr;
+		padding: 1rem;
+		background: url(/assets/images/home/bg.png) no-repeat bottom 50px center;;
 	}
+	
 	}
 	@media only screen and (max-width: 800px) {
-	
-		.hero-section__section {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
 	}
 
 </style>
