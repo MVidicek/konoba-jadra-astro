@@ -337,7 +337,7 @@ import Logo from '../../Logo.astro';
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 40px center;;
 	}
 	.hero-section__text {
 		justify-self: center;
@@ -390,6 +390,14 @@ import Logo from '../../Logo.astro';
 		margin-right: auto;
 		margin-bottom: 3rem;
 		}
+		.hero-section__section {
+		margin: var(--section-margin) auto;
+		margin-bottom: 0;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 30px center;;
+	}
 	}
 	@media only screen and (max-width: 1000px) {
     .logo-mobile{
@@ -407,7 +415,7 @@ import Logo from '../../Logo.astro';
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 1rem;
-		background: url(/assets/images/home/bg.png) no-repeat bottom 50px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 50px center;;
 	}
 	
 	}
