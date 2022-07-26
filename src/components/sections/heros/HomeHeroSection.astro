@@ -6,43 +6,81 @@ import Logo from '../../Logo.astro';
 ---
 
 <Container>
-	<section class="hero-section__section">
-		<div class="hero-section__image mx-auto">
-			<picture>
-				<img
-					src="/assets/images/home/5.png"
-					alt="seafood left illustration"
-				/>
-			</picture>
-	</div>
-		<div class="hero-section__text">
-			<div class="logo-mobile w-3/5 flex flex-row justify-center items-center">
-				<Logo />
-			</div>
-			{settings.enableThemeSwitcher && <ThemeSwitcher />}
-			<h1 class="font-bold text-xl text-center">Konoba Jadra</h1>
-				<p class="mb-4 text-sm text-center">
-					A seafood restaurant located in Kornati National Park on Island Piškera, Croatia.
-				</p>
-				<iframe width="350" height="350" frameborder="1" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=15.333116054534914%2C43.751877197928735%2C15.34770727157593%2C43.771140302094025&amp;layer=mapnik" class="map"></iframe><br/>
-				<div class="hero-btns__container">
-					<Button href="/company/contact" materialIcon="call"
-						>Reservations</Button
-					>
-					<Button href="/company/menu" materialIcon="article"
-						>The Menu</Button
-					>
+	<div class="container px-6 mx-auto">
+
+    <!-- Section: Design Block -->
+    <section class="mb-6 text-gray-800 text-center lg:text-left background-radial-gradient">
+
+      <div class="relative overflow-hidden bg-no-repeat bg-cover avatars" style="
+            background-position: 50%;
+            background-image: url('/assets/images/gallery/boat2.jpg');
+            height: 400px;
+          ">
+        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          style="background-color: rgba(0, 0, 0, 0.2)">
+          <div class="flex justify-center items-center h-full">
+            <div class="text-center text-white px-6 py-6 md:py-0 md:px-12 max-w-[800px]">
+              <div class="logo-mobile mb-12 w-3/5 flex flex-row justify-center items-center">
+								<Logo />
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+	<div class="container my-8 px-6 mx-auto">
+
+		<!-- Section: Design Block -->
+		<section class="mb-8 text-gray-800 text-center lg:text-left">
+			<style>
+				@media (min-width: 992px) {
+					.rotate-lg-6 {
+						transform: rotate(6deg);
+					}
+				}
+	
+				/* These are the KEY styles - you can add them directly to any object you want in your project */
+				.fancy-border-radius {
+					border-radius: 53% 47% 52% 48% / 36% 41% 59% 64%;
+				}
+			</style>
+	
+			<!-- Jumbotron -->
+			<div class="container mx-auto xl:px-32 text-center lg:text-left">
+				<div class="grid lg:grid-cols-2 items-center">
+					<div class="mb-12 lg:mb-0">
+						<div
+							class="relative block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+							style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px); z-index: 1"
+						>
+						<h2 class="text-3xl font-bold mb-4 display-5">Konoba Jadra</h2>
+							<p class="text-gray-500 mb-6">
+								A seafood restaurant in Kornati National Park. Located on the island of Piškera, across from the ACI marina.
+							</p>
+	
+							<div class="hero-btns__container">
+									<Button href="/company/menu" materialIcon="article">The Menu</Button>
+									<Button href="/company/contact" materialIcon="call">Reservations</Button>
+							</div>
+						</div>
+					</div>
+	
+					<div>
+						<img
+							src="/assets/images/home/home-1.jpg"
+							class="w-full shadow-lg avatars"
+							alt="Home islands image"
+						/>
+					</div>
 				</div>
-		</div>
-		<div class="hero-section__image mx-auto">
-			<picture>
-				<img
-					src="/assets/images/home/6.png"
-					alt="seafood right illustration"
-				/>
-			</picture>
+			</div>
+			<!-- Jumbotron -->
+		</section>
+		<!-- Section: Design Block -->
 	</div>
-	</section>
+
 	<hr class="solid mb-8">
 	<div class="container px-12 mx-auto">
 		<section class="mb-16 text-gray-800">
@@ -55,7 +93,7 @@ import Logo from '../../Logo.astro';
 
 				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
 					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-					<img src="/assets/images/home/home-1.jpg" alt="Staff Image"
+					<img src="/assets/images/home/home-4.jpg" alt="Staff Image"
 						class="w-full transition duration-300 ease-linear align-middle" loading="lazy" />
 					<a href="#!">
 						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden">
@@ -138,7 +176,7 @@ import Logo from '../../Logo.astro';
 						<div class="flex flex-wrap justify-center">
 							<div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
 								<h5 class="text-lg font-bold mb-3">Fernando_V6</h5>
-								<p class="font-medium text-yellow-500 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r844406219-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Oasis for gourmets</a></p>
+								<p class="font-medium text-blue-800 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r844406219-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Oasis for gourmets</a></p>
 								<p class="text-gray-500 mb-6">
 									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
 										class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -149,7 +187,7 @@ import Logo from '../../Logo.astro';
 								</p>
 								<ul class="flex justify-center mb-0">
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -157,7 +195,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -165,7 +203,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -173,7 +211,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -182,7 +220,7 @@ import Logo from '../../Logo.astro';
 									</li>
 									<li>
 										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star-half-alt"
-											class="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+											class="w-4 text-blue-800" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
 											</path>
@@ -198,7 +236,7 @@ import Logo from '../../Logo.astro';
 						<div class="flex flex-wrap justify-center">
 							<div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
 								<h5 class="text-lg font-bold mb-3">Quoshak</h5>
-								<p class="font-medium text-yellow-500 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r763379681-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Friendly staff and nice food</a></p>
+								<p class="font-medium text-blue-800 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r763379681-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Friendly staff and nice food</a></p>
 								<p class="text-gray-500 mb-6">
 									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
 										class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -210,7 +248,7 @@ import Logo from '../../Logo.astro';
 								</p>
 								<ul class="flex justify-center mb-0">
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -218,7 +256,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -226,7 +264,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -234,7 +272,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -242,7 +280,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z">
@@ -259,7 +297,7 @@ import Logo from '../../Logo.astro';
 						<div class="flex flex-wrap justify-center">
 							<div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
 								<h5 class="text-lg font-bold mb-3">iLili_p</h5>
-								<p class="font-medium text-yellow-500 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r705176625-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Nice Dalmatian restaurant</a></p>
+								<p class="font-medium text-blue-800 mb-4"><a href="https://www.tripadvisor.com/ShowUserReviews-g303811-d10447997-r705176625-Konoba_Jadra-Kornati_Islands_National_Park_Sibenik_Knin_County_Dalmatia.html" target="_blank">Nice Dalmatian restaurant</a></p>
 								<p class="text-gray-500 mb-6">
 									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
 										class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -271,7 +309,7 @@ import Logo from '../../Logo.astro';
 								</p>
 								<ul class="flex justify-center mb-0">
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -279,7 +317,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -287,7 +325,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -295,7 +333,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
@@ -303,7 +341,7 @@ import Logo from '../../Logo.astro';
 										</svg>
 									</li>
 									<li>
-										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500"
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-blue-800"
 											role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
 											<path fill="currentColor"
 												d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z">
@@ -336,7 +374,8 @@ import Logo from '../../Logo.astro';
 
 <style>
 	.logo-mobile{
-		display: none;
+		margin-left: 20%;
+		margin-bottom: 2rem;
 	}
 	.avatars {
 		border-radius: var(--theme-shape-radius);
@@ -347,64 +386,15 @@ import Logo from '../../Logo.astro';
 	.home-image {
 		border-radius: var(--theme-shape-radius);
 	}
-	.map{
-		width: 100%;
-		max-height: 100vh;
-		object-fit: cover;
-		border: 1px solid;
-		border-radius: var(--theme-shape-radius);
-
-		}
-	.hero-section__section {
-		margin: var(--section-margin) auto;
-		margin-bottom: 2rem;
-		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;
-	}
-	.hero-section__text {
-		justify-self: center;
-		max-width: 25rem;
-		align-items: center;
-	}
 	.hero-btns__container {
 		display: grid;
-		grid-template-columns: 1fr;
-		gap: 1rem;
+		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		justify-items: center;
 		margin-right: auto;
-	}
-	.hero-section__image {
-		display: flex;
-	}
-	.hero-section__image img {
-		width: 100%;
-		height: 100%;
-		margin-top: 5rem;
-		max-height: 80vh;
-		object-fit: cover;
-	}
-	@media (max-width: 768px) {
-		.map{
-			width: 100%;
-		}
-	}
-	@media only screen and (max-width: 1300px) {
-    .logo-mobile{
-			display: block;
-			margin-left: 20%;
-		}
-		.hero-section__image img {
-		width: 100%;
-		height: 100%;
-		margin: auto;
-		margin-top: 50%;
-		max-height: 60vh;
-		object-fit: cover;
-		}
-		.hero-btns__container {
+	}	
+	@media only screen and (max-width: 800px) {
+    .hero-btns__container {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 1rem;
@@ -413,63 +403,7 @@ import Logo from '../../Logo.astro';
 		margin-right: auto;
 		margin-bottom: 1.5rem;
 		}
-		.hero-section__section {
-		margin: var(--section-margin) auto;
-		margin-bottom: 0;
-		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 390px center;
-	}
-	}
-	@media only screen and (max-width: 1000px) {
-    .logo-mobile{
-			display: block;
-			margin-left: 20%;
-			margin-bottom: 1rem;
-		}
-    .hero-section__image img {
-		display: none;
-		}
-		.hero-btns__container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1rem;
-		align-items: center;
-		justify-items: center;
-		margin-right: auto;
-		margin-bottom: 0.5rem;
-		}
-		.hero-section__section {
-		margin: var(--section-margin) auto;
-		margin-bottom: 0;
-		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
-		display: grid;
-		grid-template-columns: 1fr;
-		padding: 1rem;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 320px center;
-	}
-	
-	}
-	@media only screen and (max-width: 400px) {
-		.hero-section__section {
-		margin: var(--section-margin) auto;
-		margin-bottom: 0;
-		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
-		display: grid;
-		grid-template-columns: 1fr;
-		padding: 1rem;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;
-	}
-		.hero-btns__container {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 0.5rem;
-		align-items: center;
-		justify-items: center;
-		margin-right: auto;
-		margin-bottom: 0.5rem;
-		}
+		
 	}
 
 </style>
