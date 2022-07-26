@@ -25,9 +25,5 @@
 		"lit": "^2.2.3",
 		"prettier-plugin-astro": "^0.0.12",
 		"tw-elements": "^1.0.0-alpha12"
-	},
-	"devDependencies": {
-		"@astrojs/preact": "^0.5.2",
-		"preact": "^10.10.0"
 	}
 }

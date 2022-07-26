@@ -2,67 +2,194 @@
 import { Container } from '@odyssey-theme/components';
 ---
 
-<Container>
-	<section class="hero-section__section">
-		<div class="hero-section__image">
-			<picture>
-				<img
-				src="/assets/images/menu/menu-hr.png"
-				alt="Menu Food Croatian"
-				id="menu-food-image"
-				/>
-			</picture>
-		</div>
-	</section>
-	<section class="hero-section__section">
-		<div class="hero-section__image">
-			<picture>
-				<img
-					src="/assets/images/menu/drinks-hr.png"
-					alt="Menu Drinks"
-					id="menu-drinks-image"
-				/>
-			</picture>
-		</div>
-	</section>
-</Container>
+<script>
+  // Get the button
+let mybutton = document.getElementById('btn-back-to-top');
 
-<style>
-	.hero-section__section {
-		margin: var(--section-margin) auto;
-		margin-top: 1rem;
-		margin-bottom: 2rem;
-		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.hero-section__text {
-		justify-self: center;
-		max-width: 25rem;
-	}
-	.hero-btns__container {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
-	.hero-btns__container {
-		margin-right: 1rem;
-	}
-	.hero-section__image {
-		display: flex;
-	}
-	.hero-section__image :global(img) {
-		width: 100%;
-		height: 100%;
-		max-height: 80vh;
-		object-fit: cover;
-		border-radius: var(--theme-shape-radius);
-	}
-	.img-container-countries {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-</style>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block';
+  } else {
+    mybutton.style.display = 'none';
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener('click', backToTop);
+</script>
+
+<Container>
+	<div class="container my-24 px-6 mx-auto">
+
+		<!-- Section: Design Block -->
+		<section class="mb-24 text-gray-800 text-center">
+			<h2 class="text-3xl font-bold mb-6">Food</h2>
+			<hr class="solid mb-8">
+	
+			<div class="grid md:grid-cols-4 gap-x-3 lg:gap-x-12">
+				
+				<div class="mb-6 lg:mb-0">
+					<div class="bg-white block rounded-lg shadow-lg">
+						<div class="relative overflow-hidden bg-no-repeat bg-cover">
+							<img src="/assets/images/menu/menu-hr.png" class="w-full rounded-t-lg" loading="lazy"/>
+							<a href="/assets/images/menu/menu-hr.png" target="_blank">
+								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+							</a>
+							<svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"
+								style="left: 0; bottom: 0">
+								<path fill="#fff"
+									d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+								</path>
+							</svg>
+						</div>
+						<div class="">
+							<h5 class="text-lg font-bold mb-4">Hrvatski</h5>
+						</div>
+					</div>
+				</div>
+	
+				<div class="mb-6 lg:mb-0">
+					<div class="bg-white block rounded-lg shadow-lg">
+						<div class="relative overflow-hidden bg-no-repeat bg-cover">
+							<img src="/assets/images/menu/menu-de.png" class="w-full rounded-t-lg" loading="lazy"/>
+							<a href="/assets/images/menu/menu-de.png" target="_blank">
+								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+							</a>
+							<svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"
+								style="left: 0; bottom: 0">
+								<path fill="#fff"
+									d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+								</path>
+							</svg>
+						</div>
+						<div class="">
+							<h5 class="text-lg font-bold mb-4">Deutsch</h5>
+						</div>
+					</div>
+				</div>
+	
+				<div class="mb-6 lg:mb-0">
+					<div class="bg-white block rounded-lg shadow-lg">
+						<div class="relative overflow-hidden bg-no-repeat bg-cover">
+							<img src="/assets/images/menu/menu-it.png" class="w-full rounded-t-lg" loading="lazy" />
+							<a href="/assets/images/menu/menu-it.png" target="_blank">
+								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+							</a>
+							<svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"
+								style="left: 0; bottom: 0">
+								<path fill="#fff"
+									d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+								</path>
+							</svg>
+						</div>
+						<div class="">
+							<h5 class="text-lg font-bold mb-4">Italiano</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-6 lg:mb-0">
+					<div class="bg-white block rounded-lg shadow-lg">
+						<div class="relative overflow-hidden bg-no-repeat bg-cover">
+							<img src="/assets/images/menu/menu-eng.png" class="w-full rounded-t-lg" loading="lazy"/>
+							<a href="/assets/images/menu/menu-eng.png" target="_blank">
+								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+							</a>
+							<svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"
+								style="left: 0; bottom: 0">
+								<path fill="#fff"
+									d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+								</path>
+							</svg>
+						</div>
+						<div class="">
+							<h5 class="text-lg font-bold mb-4">English</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Section: Design Block -->
+
+		<section class="mb-24 text-gray-800 text-center">
+			<h2 class="text-3xl font-bold mb-6">Drinks</h2>
+			<hr class="solid mb-8">
+	
+			<div class="grid md:grid-cols-2 gap-x-3 lg:gap-x-12">
+
+				<div class="mb-6 lg:mb-0">
+					<div class="bg-white block rounded-lg shadow-lg">
+						<div class="relative overflow-hidden bg-no-repeat bg-cover">
+							<img src="/assets/images/menu/drinks-hr.png" class="w-full rounded-t-lg" loading="lazy"/>
+							<a href="/assets/images/menu/drinks-hr.png" target="_blank">
+								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+							</a>
+							<svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"
+								style="left: 0; bottom: 0">
+								<path fill="#fff"
+									d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+								</path>
+							</svg>
+						</div>
+						<div class="">
+							<h5 class="text-lg font-bold mb-4">Hrvatski</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-6 lg:mb-0">
+					<div class="bg-white block rounded-lg shadow-lg">
+						<div class="relative overflow-hidden bg-no-repeat bg-cover">
+							<img src="/assets/images/menu/drinks-eng.png" class="w-full rounded-t-lg" loading="lazy"/>
+							<a href="/assets/images/menu/drinks-eng.png" target="_blank">
+								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+							</a>
+							<svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"
+								style="left: 0; bottom: 0">
+								<path fill="#fff"
+									d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+								</path>
+							</svg>
+						</div>
+						<div class="">
+							<h5 class="text-lg font-bold mb-4">English</h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<hr class="solid mb-8">
+	</div>
+	<button
+  type="button"
+  data-mdb-ripple="true"
+  data-mdb-ripple-color="light"
+  class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out hidden bottom-5 right-5 fixed"
+  id="btn-back-to-top"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    data-prefix="fas"
+    class="w-4 h-4"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+  >
+    <path
+      fill="currentColor"
+      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+    ></path>
+  </svg>
+</button>
+</Container>

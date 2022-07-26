@@ -1,7 +1,7 @@
 :root {
     /* Theme Colors */
-    --theme-primary: #00388b;
-    --theme-primary-hover: hsl(219, 66%, 44%);
+    --theme-primary: rgb(26, 26, 26);
+    --theme-primary-hover: #00388b;
     --theme-on-primary: #fff;
 
     --theme-bg: #fff;
@@ -37,8 +37,8 @@
 
 [data-theme='default'] {
     /* Theme Colors */
-    --theme-primary: #00388b;
-    --theme-primary-hover: hsl(219, 66%, 44%);
+    --theme-primary: rgb(26, 26, 26);
+    --theme-primary-hover: #00388b;
     --theme-on-primary: #fff;
 
     --theme-bg: #fff;
@@ -70,8 +70,8 @@
 
 [data-theme='earth'] {
     /* Theme Colors */
-    --theme-primary: #00388b;
-    --theme-primary-hover: hsl(219, 66%, 44%);
+    --theme-primary: rgb(26, 26, 26);
+    --theme-primary-hover: #00388b;
     --theme-on-primary: #fff;
 
     --theme-bg: #fff;
@@ -103,8 +103,8 @@
 
 [data-theme='ocean'] {
     /* Theme Colors */
-    --theme-primary: #00388b;
-    --theme-primary-hover: hsl(219, 66%, 44%);
+    --theme-primary: rgb(26, 26, 26);
+    --theme-primary-hover: #00388b;
     --theme-on-primary: #fff;
 
     --theme-bg: #fff;
@@ -136,8 +136,8 @@
 
 [data-theme='sand'] {
     /* Theme Colors */
-    --theme-primary: #00388b;
-    --theme-primary-hover: hsl(219, 66%, 44%);
+    --theme-primary: rgb(26, 26, 26);
+    --theme-primary-hover: #00388b;
     --theme-on-primary: #fff;
 
     --theme-bg: #fff;
