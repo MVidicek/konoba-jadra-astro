@@ -1,5 +1,6 @@
 ---
-import { Header, Button} from '@odyssey-theme/components';
+import { Button} from '@odyssey-theme/components';
+import Header from '../components/header/Header.astro';
 import Footer from '../components/footer/Footer.astro';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
@@ -19,7 +20,7 @@ const { seo } = Astro.props as Props;
 <Layout seo={seo}>
 	<Header rightMenu navData={nav} slot="header">
 		<span slot="logo" id="show">
-			<div class="w-1/5">
+			<div class="w-1/6">
 				<Logo />
 			</div>
 		</span>

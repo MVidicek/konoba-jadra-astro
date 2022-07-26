@@ -9,30 +9,5 @@ const seo = {
 ---
 
 <Layout {seo}>
-	<div class="img-container-countries container">
-		<img class="img-country" id="hr" src="/assets/images/countries/croatia.png" alt="croatian flag">
-		<img class="img-country" id="de" src="/assets/images/countries/germany.png" alt="german flag">
-		<img class="img-country" id="it" src="/assets/images/countries/italy.png" alt="italian flag">
-		<img class="img-country" id="uk" src="/assets/images/countries/united-kingdom.png" alt="great britain flag">
-	</div>
 	<HeroSection/>
 </Layout>
-
-<style>
-	.img-country{
-		width: 15%;
-		max-width: 64px;
-		margin: 0 10px;
-	}
-	.img-country:hover
-    {
-      opacity: 0.5;
-      filter: alpha(opacity=50);
-    }
-	.img-container-countries {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-</style>

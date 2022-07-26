@@ -1,27 +1,5 @@
 ---
 import { Container } from '@odyssey-theme/components';
-		// check for a local storage theme first
-const localStorageTheme = localStorage.getItem('theme');
-
-let language = 'hr';
-
-switch(localStorageTheme) {
-	case 'default':
-		language = "hr";
-		break;
-	case 'earth':
-		language = "de";
-		break;
-	case 'ocean':
-		language = "it";
-		break;
-	case 'sand':
-		language = "eng";
-		break;
-	default:
-		language = "hr";
-		break;
-}
 ---
 
 <Container>
@@ -29,9 +7,9 @@ switch(localStorageTheme) {
 		<div class="hero-section__image">
 			<picture>
 				<img
-					src={`/assets/images/menu/menu-${language}.png`}
-					alt="Menu Food"
-					id="menu-image-food"
+				src="/assets/images/menu/menu-hr.png"
+				alt="Menu Food Croatian"
+				id="menu-food-image"
 				/>
 			</picture>
 		</div>
@@ -42,7 +20,7 @@ switch(localStorageTheme) {
 				<img
 					src="/assets/images/menu/drinks-hr.png"
 					alt="Menu Drinks"
-					id="menu-image-drinks"
+					id="menu-drinks-image"
 				/>
 			</picture>
 		</div>

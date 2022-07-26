@@ -20,7 +20,7 @@ import Logo from '../../Logo.astro';
 				<Logo />
 			</div>
 			{settings.enableThemeSwitcher && <ThemeSwitcher />}
-				<h1 class="font-bold text-xl text-center">Konoba Jadra</h1>
+			<h1 class="font-bold text-xl text-center">Konoba Jadra</h1>
 				<p class="mb-4 text-sm text-center">
 					A seafood restaurant located in Kornati National Park on Island Piškera, Croatia.
 				</p>
@@ -56,7 +56,7 @@ import Logo from '../../Logo.astro';
 				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
 					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
 					<img src="/assets/images/home/home-1.jpg" alt="Staff Image"
-						class="w-full transition duration-300 ease-linear align-middle" />
+						class="w-full transition duration-300 ease-linear align-middle" loading="lazy" />
 					<a href="#!">
 						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden">
 						</div>
@@ -71,7 +71,7 @@ import Logo from '../../Logo.astro';
 				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
 					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
 					<img src="/assets/images/home/home-2.jpg" alt="Indoors Image"
-						class="w-full transition duration-300 ease-linear align-middle" />
+						class="w-full transition duration-300 ease-linear align-middle" loading="lazy" />
 					<a href="#!">
 						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
 							style="background-color: rgba(0, 0, 0, 0.1)">
@@ -89,7 +89,7 @@ import Logo from '../../Logo.astro';
 				<div class="zoom shadow-lg home-image relative overflow-hidden bg-no-repeat bg-cover"
 					style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
 					<img src="/assets/images/home/home-3.jpg" alt="Outdoors Image"
-						class="w-full transition duration-300 ease-linear align-middle" />
+						class="w-full transition duration-300 ease-linear align-middle" loading="lazy"/>
 					<a href="#!">
 						<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
 							style="background-color: rgba(0, 0, 0, 0.1)">
@@ -337,7 +337,7 @@ import Logo from '../../Logo.astro';
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;
 	}
 	.hero-section__text {
 		justify-self: center;
@@ -395,7 +395,7 @@ import Logo from '../../Logo.astro';
 		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 390px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 390px center;
 	}
 	}
 	@media only screen and (max-width: 1000px) {
@@ -423,7 +423,7 @@ import Logo from '../../Logo.astro';
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 1rem;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 320px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 320px center;
 	}
 	
 	}
@@ -435,7 +435,7 @@ import Logo from '../../Logo.astro';
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 1rem;
-		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;;
+		background: url(/assets/images/home/bg2.png) no-repeat bottom 360px center;
 	}
 		.hero-btns__container {
 		display: grid;
