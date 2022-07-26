@@ -11,16 +11,12 @@ import Logo from '../../Logo.astro';
     <!-- Section: Design Block -->
     <section class="mb-6 text-gray-800 text-center lg:text-left background-radial-gradient">
 
-      <div class="relative overflow-hidden bg-no-repeat bg-cover avatars" style="
-            background-position: 50%;
-            background-image: url('/assets/images/gallery/boat2.jpg');
-            height: 400px;
-          ">
+      <div class="relative overflow-hidden bg-no-repeat bg-cover avatars head-image">
         <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
           style="background-color: rgba(0, 0, 0, 0.2)">
           <div class="flex justify-center items-center h-full">
             <div class="text-center text-white px-6 py-6 md:py-0 md:px-12 max-w-[800px]">
-              <div class="logo-mobile mb-12 w-3/5 flex flex-row justify-center items-center">
+              <div class="logo-mobile mb-12 w-3/6 flex flex-row justify-center items-center">
 								<Logo />
 							</div>
             </div>
@@ -166,7 +162,7 @@ import Logo from '../../Logo.astro';
 		<section class="mb-32 text-gray-800 text-center ">
 	
 			<h2 class="text-3xl font-bold mb-2 text-zinc-800">Reviews</h2>
-			<h6 class="text-sm mb-12">(Clicking Review Titles leads to the actual Review)<h6>
+			<section class="text-sm mb-12"><h5>(Clicking Review Titles leads to the actual Review)</h5></section>
 	
 			<div id="carouselExampleCaptions" class="carousel slide relative carousel-dark" data-bs-ride="carousel">
 				<div class="carousel-inner relative w-full overflow-hidden">
@@ -374,7 +370,7 @@ import Logo from '../../Logo.astro';
 
 <style>
 	.logo-mobile{
-		margin-left: 20%;
+		margin-left: 25%;
 		margin-bottom: 2rem;
 	}
 	.avatars {
@@ -382,6 +378,11 @@ import Logo from '../../Logo.astro';
 	}
 	.primary-color{
 		color: var(--theme-primary);
+	}
+	.head-image{
+		background-position: 50%;
+    background-image: url('/assets/images/gallery/boat2.jpg');
+    height: 400px;
 	}
 	.home-image {
 		border-radius: var(--theme-shape-radius);
@@ -403,6 +404,11 @@ import Logo from '../../Logo.astro';
 		margin-right: auto;
 		margin-bottom: 1.5rem;
 		}
+		.head-image{
+		background-position: 50%;
+    background-image: url('/assets/images/gallery/boat2.jpg');
+    height: 200px;
+	}
 		
 	}
 
