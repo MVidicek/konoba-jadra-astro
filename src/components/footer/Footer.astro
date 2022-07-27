@@ -16,7 +16,7 @@ const { footerSocials, background, color} = Astro.props;
       <ul class="footer-socials__list">
           {footerSocials.map(social => (
             <li class="footer-socials__item">
-              <a href={social.url} target="_blank" rel="noopener noreferrer" class="footer-socials__link" set:html={social.icon}>                
+              <a href={social.url} aria-label={social.label} target="_blank" rel="noopener noreferrer" class="footer-socials__link" set:html={social.icon}>                
               </a>            
             </li>
           ))}
@@ -59,11 +59,6 @@ const { footerSocials, background, color} = Astro.props;
   }
   .footer-socials__item {
     margin-right: 0.5rem;
-  }
-  .footer-link__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
   .footer-brand__container {
       grid-column: 1 / span 2;

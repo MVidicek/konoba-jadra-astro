@@ -3,7 +3,7 @@ import Header from '../components/header/Header.astro';
 import Footer from '../components/footer/Footer.astro';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
-import { footerLists, footerSocials } from '../config/footer';
+import { footerSocials } from '../config/footer';
 
 
 export interface Props {
@@ -27,7 +27,6 @@ const { seo } = Astro.props as Props;
 		slot="footer"
 		background="var(--theme-surface-1)"
 		color="var(--theme-on-surface-1)"
-		footerLists={footerLists}
     footerSocials={footerSocials}
 	>
 	</Footer>
