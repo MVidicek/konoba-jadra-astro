@@ -9,6 +9,12 @@ export interface Props {
 	image?: string;
 }
 
+declare global {
+  interface Window {
+    dataLayer: any;
+  }
+}
+
 const title = Astro.props.title || settings.title;
 const description = Astro.props.description || settings.description;
 const { canonicalURL = Astro.canonicalURL } = Astro.props;
@@ -76,10 +82,21 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <!-- For Demonstration of the themes -->
 {settings.enableThemeSwitcher && <ThemeProvider />}
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CH40Q3QWD7"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	const gtag: Gtag.Gtag = function () {window.dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-CH40Q3QWD7');
+</script>
+
 <!-- Google Analytics -->
 <script>
   var host = window.location.hostname;
   if(host != 'localhost') {
-    // Place Google Analytics code here.
   }
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>

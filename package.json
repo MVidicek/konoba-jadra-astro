@@ -25,5 +25,8 @@
 		"lit": "^2.2.3",
 		"prettier-plugin-astro": "^0.0.12",
 		"tw-elements": "^1.0.0-alpha12"
+	},
+	"devDependencies": {
+		"@types/gtag.js": "^0.0.10"
 	}
 }
