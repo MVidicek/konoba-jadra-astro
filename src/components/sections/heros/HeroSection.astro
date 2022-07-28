@@ -2,31 +2,6 @@
 import { Container } from '@odyssey-theme/components';
 ---
 
-<script>
-  // Get the button
-let mybutton = document.getElementById('btn-back-to-top');
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = 'block';
-  } else {
-    mybutton.style.display = 'none';
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener('click', backToTop);
-</script>
-
 <Container>
 	<div class="container my-6 px-6 mx-auto">
 
@@ -40,8 +15,8 @@ mybutton.addEventListener('click', backToTop);
 				<div class="mb-6 lg:mb-0">
 					<div class="bg-white block rounded-lg shadow-lg">
 						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-hr.webp" class="w-full rounded-t-lg" loading="lazy"/>
-							<a href="/assets/images/menu/menu-hr.webp" target="_blank"  rel="noopener">
+							<img src="/assets/images/menu/menu-hr.webp" class="w-full rounded-t-lg" alt="croatian food menu" alt="croatian food menu" loading="lazy"/>
+							<a href="/assets/images/menu/menu-hr.webp" aria-label="croatian food menu image" aria-label="croatian food menu image" target="_blank"  rel="noopener">
 								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
 							</a>
 						</div>
@@ -54,8 +29,8 @@ mybutton.addEventListener('click', backToTop);
 				<div class="mb-6 lg:mb-0">
 					<div class="bg-white block rounded-lg shadow-lg">
 						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-de.webp" class="w-full rounded-t-lg" loading="lazy"/>
-							<a href="/assets/images/menu/menu-de.webp" target="_blank"  rel="noopener">
+							<img src="/assets/images/menu/menu-de.webp" class="w-full rounded-t-lg" alt="german food menu" loading="lazy"/>
+							<a href="/assets/images/menu/menu-de.webp" aria-label="german food menu image" target="_blank"  rel="noopener">
 								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
 							</a>
 						</div>
@@ -68,8 +43,8 @@ mybutton.addEventListener('click', backToTop);
 				<div class="mb-6 lg:mb-0">
 					<div class="bg-white block rounded-lg shadow-lg">
 						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-it.webp" class="w-full rounded-t-lg" loading="lazy" />
-							<a href="/assets/images/menu/menu-it.webp" target="_blank"  rel="noopener">
+							<img src="/assets/images/menu/menu-it.webp" class="w-full rounded-t-lg" alt="italian food menu" loading="lazy" />
+							<a href="/assets/images/menu/menu-it.webp" aria-label="italian food menu image" target="_blank"  rel="noopener">
 								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
 							</a>
 						</div>
@@ -82,8 +57,8 @@ mybutton.addEventListener('click', backToTop);
 				<div class="mb-6 lg:mb-0">
 					<div class="bg-white block rounded-lg shadow-lg">
 						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-eng.webp" class="w-full rounded-t-lg" loading="lazy"/>
-							<a href="/assets/images/menu/menu-eng.webp" target="_blank"  rel="noopener">
+							<img src="/assets/images/menu/menu-eng.webp" class="w-full rounded-t-lg" alt="english food menu" loading="lazy"/>
+							<a href="/assets/images/menu/menu-eng.webp" aria-label="english food menu image" target="_blank"  rel="noopener">
 								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
 							</a>
 						</div>
@@ -105,8 +80,8 @@ mybutton.addEventListener('click', backToTop);
 				<div class="mb-6 lg:mb-0">
 					<div class="bg-white block rounded-lg shadow-lg">
 						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/drinks-hr.webp" class="w-full rounded-t-lg" loading="lazy"/>
-							<a href="/assets/images/menu/drinks-hr.webp" target="_blank"  rel="noopener">
+							<img src="/assets/images/menu/drinks-hr.webp" class="w-full rounded-t-lg" alt="croatian drinks menu" loading="lazy"/>
+							<a href="/assets/images/menu/drinks-hr.webp" aria-label="croatian drinks menu image" target="_blank"  rel="noopener">
 								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
 							</a>
 						</div>
@@ -119,8 +94,8 @@ mybutton.addEventListener('click', backToTop);
 				<div class="mb-6 lg:mb-0">
 					<div class="bg-white block rounded-lg shadow-lg">
 						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/drinks-eng.webp" class="w-full rounded-t-lg" loading="lazy"/>
-							<a href="/assets/images/menu/drinks-eng.webp" target="_blank"  rel="noopener">
+							<img src="/assets/images/menu/drinks-eng.webp" class="w-full rounded-t-lg" alt="english drinks menu" loading="lazy"/>
+							<a href="/assets/images/menu/drinks-eng.webp" aria-label="english drinks menu image" target="_blank"  rel="noopener">
 								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
 							</a>
 						</div>
@@ -134,26 +109,4 @@ mybutton.addEventListener('click', backToTop);
 			<hr class="solid mb-10">
 		</section>
 	</div>
-	<button
-  type="button"
-  data-mdb-ripple="true"
-  data-mdb-ripple-color="light"
-  class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out hidden bottom-5 right-5 fixed"
-  id="btn-back-to-top"
->
-  <svg
-    aria-hidden="true"
-    focusable="false"
-    data-prefix="fas"
-    class="w-4 h-4"
-    role="img"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 448 512"
-  >
-    <path
-      fill="currentColor"
-      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
-    ></path>
-  </svg>
-</button>
 </Container>
