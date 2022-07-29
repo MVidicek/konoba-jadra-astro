@@ -20,7 +20,7 @@ const image = new URL(Astro.props.image || '/assets/images/social.jpg', Astro.si
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/png" href="/favicon.png" />
 
-<link rel="preload" as="style" href="/styles/index.css" async/>
+<link rel="preload" as="style" href="/styles/index.css" defer/>
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -45,8 +45,8 @@ const image = new URL(Astro.props.image || '/assets/images/social.jpg', Astro.si
 <meta property="twitter:image" content={image} />
 
 <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" async/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin async/>
+<link rel="preconnect" href="https://fonts.googleapis.com" defer/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer/>
 <link
 	rel="preload"
 	href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
@@ -75,7 +75,7 @@ const image = new URL(Astro.props.image || '/assets/images/social.jpg', Astro.si
 	/>
 </noscript>
 
-<link rel="stylesheet" href="/styles/index.css" async/>
+<link rel="stylesheet" href="/styles/index.css" defer/>
 
 <!-- For Demonstration of the themes -->
 {settings.enableThemeSwitcher && <ThemeProvider />}
