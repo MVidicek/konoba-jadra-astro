@@ -30,109 +30,93 @@ mybutton.addEventListener('click', backToTop);
 <Container>
 	<div class="container my-6 px-6 mx-auto">
 
-		<!-- Section: Design Block -->
-		<section class="mb-12 text-gray-800 text-center">
-			<h1 class="text-3xl font-bold mb-1">Food Menu</h1>
-			<hr class="solid mb-8">
+		<section class=" text-gray-800 text-center ">
 	
-			<div class="grid md:grid-cols-4 gap-x-3 lg:gap-x-12">
-				
-				<div class="mb-6 lg:mb-0">
-					<div class="bg-white block rounded-lg shadow-lg">
-						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-hr.webp" class="w-full rounded-t-lg" alt="croatian food menu" alt="croatian food menu" loading="lazy"/>
-							<a href="/assets/images/menu/menu-hr.webp" aria-label="croatian food menu image" aria-label="croatian food menu image" target="_blank"  rel="noopener">
-								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
-							</a>
-						</div>
-						<div class="">
-							<h5 class="text-lg font-bold mb-4">Hrvatski</h5>
-						</div>
-					</div>
-				</div>
+			<h1 class="text-3xl font-bold text-zinc-800">Food Menu</h1>
+			<h2 class="text-sm mb-4">(Click/Tap on Menus to open bigger image)</h2>
 	
-				<div class="mb-6 lg:mb-0">
-					<div class="bg-white block rounded-lg shadow-lg">
-						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-de.webp" class="w-full rounded-t-lg" alt="german food menu" loading="lazy"/>
-							<a href="/assets/images/menu/menu-de.webp" aria-label="german food menu image" target="_blank"  rel="noopener">
-								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
-							</a>
-						</div>
-						<div class="">
-							<h5 class="text-lg font-bold mb-4">Deutsch</h5>
-						</div>
+			<div id="carouselFood" class="carousel slide relative carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+				<div class="carousel-inner relative w-full overflow-hidden">
+					<div class="carousel-item active relative float-left w-full">
+						<a href="/assets/images/menu/menu-hr.webp" target="_blank" aria-label="hr menu">
+						<img class="menus shadow-lg mb-6 mx-auto"
+							src="/assets/images/menu/menu-hr.webp" alt="croatian menu" style="max-width: 756px;"/>
+						</a>
+					</div>
+					<div class="carousel-item relative float-left w-full">
+						<a href="/assets/images/menu/menu-de.webp" target="_blank" aria-label="de menu">
+						<img class="menus shadow-lg mb-6 mx-auto"
+							src="/assets/images/menu/menu-de.webp" alt="german menu" style="max-width: 756px;"/>
+						</a>
+					</div>
+					<div class="carousel-item relative float-left w-full">
+						<a href="/assets/images/menu/menu-it.webp" target="_blank" aria-label="it menu">
+						<img class="menus shadow-lg mb-6 mx-auto"
+							src="/assets/images/menu/menu-it.webp" alt="italian menu" style="max-width: 756px;"/>
+						</a>
+					</div>
+					<div class="carousel-item relative float-left w-full">
+						<a href="/assets/images/menu/menu-eng.webp" target="_blank" aria-label="eng menu">
+						<img class="menus shadow-lg mb-6 mx-auto"
+							src="/assets/images/menu/menu-eng.webp" alt="english menu" style="max-width: 756px;"/>
+						</a>
 					</div>
 				</div>
-	
-				<div class="mb-6 lg:mb-0">
-					<div class="bg-white block rounded-lg shadow-lg">
-						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-it.webp" class="w-full rounded-t-lg" alt="italian food menu" loading="lazy" />
-							<a href="/assets/images/menu/menu-it.webp" aria-label="italian food menu image" target="_blank"  rel="noopener">
-								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
-							</a>
-						</div>
-						<div class="">
-							<h5 class="text-lg font-bold mb-4">Italiano</h5>
-						</div>
-					</div>
-				</div>
-
-				<div class="mb-6 lg:mb-0">
-					<div class="bg-white block rounded-lg shadow-lg">
-						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/menu-eng.webp" class="w-full rounded-t-lg" alt="english food menu" loading="lazy"/>
-							<a href="/assets/images/menu/menu-eng.webp" aria-label="english food menu image" target="_blank"  rel="noopener">
-								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
-							</a>
-						</div>
-						<div class="">
-							<h5 class="text-lg font-bold mb-4">English</h5>
-						</div>
-					</div>
-				</div>
+				<button
+					class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+					type="button" data-bs-target="#carouselFood" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+					type="button" data-bs-target="#carouselFood" data-bs-slide="next">
+					<span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-		</section>
-		<!-- Section: Design Block -->
-
-		<section class="mb-6 text-gray-800 text-center">
-			<h2 class="text-3xl font-bold mb-1">Drinks Menu</h2>
-			<hr class="solid mb-8">
 	
-			<div class="grid md:grid-cols-2 gap-x-3 lg:gap-x-12">
-
-				<div class="mb-6 lg:mb-0">
-					<div class="bg-white block rounded-lg shadow-lg">
-						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/drinks-hr.webp" class="w-full rounded-t-lg" alt="croatian drinks menu" loading="lazy"/>
-							<a href="/assets/images/menu/drinks-hr.webp" aria-label="croatian drinks menu image" target="_blank"  rel="noopener">
-								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
-							</a>
-						</div>
-						<div class="">
-							<h5 class="text-lg font-bold mb-4">Hrvatski</h5>
-						</div>
-					</div>
-				</div>
-
-				<div class="mb-6 lg:mb-0">
-					<div class="bg-white block rounded-lg shadow-lg">
-						<div class="relative overflow-hidden bg-no-repeat bg-cover">
-							<img src="/assets/images/menu/drinks-eng.webp" class="w-full rounded-t-lg" alt="english drinks menu" loading="lazy"/>
-							<a href="/assets/images/menu/drinks-eng.webp" aria-label="english drinks menu image" target="_blank"  rel="noopener">
-								<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
-							</a>
-						</div>
-						<div class="">
-							<h5 class="text-lg font-bold mb-4">English</h5>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<hr class="solid mb-10">
 		</section>
+		
+		<hr class="solid mt-8 mb-10">
+
+		<section class=" mb-6 text-gray-800 text-center ">
+	
+			<h1 class="text-3xl font-bold mb-4 text-zinc-800">Drinks Menu</h1>
+	
+			<div id="carouselDrinks" class="carousel slide relative carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+				<div class="carousel-inner relative w-full overflow-hidden">
+					<div class="carousel-item active relative float-left w-full">
+						<a href="/assets/images/menu/drinks-hr.webp" target="_blank" aria-label="hr drinks">
+						<img class="menus shadow-lg mb-6 mx-auto"
+							src="/assets/images/menu/drinks-hr.webp" alt="drinks croatian" style="max-width: 756px;"/>
+						</a>
+					</div>
+					<div class="carousel-item relative float-left w-full">
+						<a href="/assets/images/menu/drinks-eng.webp" target="_blank" aria-label="eng drinks">
+						<img class="menus shadow-lg mb-6 mx-auto"
+							src="/assets/images/menu/drinks-eng.webp" alt="drinks english" style="max-width: 756px;"/>
+						</a>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+					type="button" data-bs-target="#carouselDrinks" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+					type="button" data-bs-target="#carouselDrinks" data-bs-slide="next">
+					<span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+	
+		</section>
+
+		<hr class="solid mb-12">
+		
 	</div>
 	<button
 type="button"
@@ -157,3 +141,15 @@ id="btn-back-to-top"
 </svg>
 </button>
 </Container>
+
+<style>
+	.menus{
+		width: 70%;
+	}
+
+	@media (max-width: 768px) {
+		.menus{
+			width: 90%;
+		}
+	}
+</style>
