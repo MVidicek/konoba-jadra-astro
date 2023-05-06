@@ -5,7 +5,6 @@ import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import { footerSocials } from '../config/footer';
 
-
 export interface Props {
 	seo?: BaseHeadProps;
 }
@@ -15,27 +14,25 @@ import { nav } from '../config/nav.js';
 const { seo } = Astro.props as Props;
 ---
 
-<Layout seo={seo}>
+<Layout {seo}>
 	<Header rightMenu navData={nav} slot="header">
-		<span slot="logo" id="show">
-		</span>
+		<span slot="logo" id="show"> </span>
 	</Header>
 	<div id="page" class="px-0">
-		<slot/>
+		<slot />
 	</div>
 	<Footer
 		slot="footer"
 		background="var(--theme-surface-1)"
 		color="var(--theme-on-surface-1)"
-    footerSocials={footerSocials}
-	>
-	</Footer>
+		{footerSocials}
+	/>
 </Layout>
 
 <style>
 	@media only screen and (max-width: 1300px) {
-    #show {
-        display: none;
-    }
-}
+		#show {
+			display: none;
+		}
+	}
 </style>

@@ -1,5 +1,5 @@
 ---
-import { SkipLink } from '@odyssey-theme/components';
+import { SkipLink } from '@littlesticks/odyssey-theme-components';
 import BaseHead from '../components/head/BaseHead.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 
@@ -16,7 +16,7 @@ const { seo } = Astro.props;
 	</head>
 	<body class="m-auto">
 		<SkipLink />
-    <slot name="announcement-bar" />
+		<slot name="announcement-bar" />
 		<slot name="header" />
 		<main id="content">
 			<slot />
@@ -26,7 +26,7 @@ const { seo } = Astro.props;
 </html>
 
 <style>
-	head{
+	head {
 		max-width: 50%;
 	}
 </style>
