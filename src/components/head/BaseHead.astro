@@ -77,13 +77,9 @@ const image = new URL(Astro.props.image || '/assets/images/social.jpg', Astro.si
 
 <link rel='stylesheet' href='/styles/index.css' defer />
 
-<!-- For Demonstration of the themes -->
-{settings.enableThemeSwitcher &&
-<ThemeProvider />}
-
 <!-- Google tag (gtag.js) -->
 <script async type='text/partytown' src='https://www.googletagmanager.com/gtag/js?id=G-CH40Q3QWD7'></script>
-<script>
+<script type='text/partytown'>
 	window.dataLayer = window.dataLayer || [];
 
 	function gtag() {
@@ -93,6 +89,13 @@ const image = new URL(Astro.props.image || '/assets/images/social.jpg', Astro.si
 	gtag('js', new Date());
 
 	gtag('config', 'G-CH40Q3QWD7');
+
+
+
 </script>
 
 <script src='https://cdn.jsdelivr.net/npm/tw-elements@1.0.0-beta2/dist/js/tw-elements.umd.min.js'></script>
+
+<!-- For Demonstration of the themes -->
+{settings.enableThemeSwitcher &&
+<ThemeProvider />}
